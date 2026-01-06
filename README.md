@@ -1,11 +1,22 @@
-🎨 CSS Programming (University Course)
-This repository contains day-wise CSS code written during my university course, starting from Lecture 1 until the end of the course.
-The purpose of this repository is to:
-Practice CSS concepts and styling techniques
-Maintain organized, lecture-wise code
-Serve as a revision resource for exams and viva
-Track learning progress using GitHub
-📚 Course Details
-Language: CSS3
-Course Type: University Web Development Course
-Level: Beginner
+# 🎨 CSS Programming (University Course)
+
+This repository contains **lecture-wise CSS code** developed during my university coursework, starting from **Lecture 1** through the completion of the course. Each lecture folder includes practical examples and exercises based on the concepts taught in class.
+
+---
+
+## 📌 Purpose of This Repository
+
+The main objectives of maintaining this repository are to:
+
+- Practice and strengthen **CSS styling concepts**
+- Keep code **organized by lecture**
+- Use it as a **revision resource** for exams and viva
+- Track learning progress and improvements using **GitHub**
+- Build a strong foundation for front-end web development
+
+---
+
+## 📚 Course Details
+
+- **Language:** CSS3  
+- **Course Type:** University Web Development Course  
