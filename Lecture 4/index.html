@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1,
+        h2 {
+            color: #222;
+        }
+
+        hr {
+            margin: 25px 0;
+            border: none;
+            height: 1px;
+            background: #ddd;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 3px solid #444;
+        }
+
+        .btn {
+            padding: 8px 14px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #1e4ed8;
+        }
+
+        .btn-green {
+            background: #22c55e;
+            color: white;
+        }
+
+        ul,
+        ol {
+            margin-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin-top: 10px;
+        }
+
+        th {
+            background: #2563eb;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        video {
+            margin-top: 10px;
+            border-radius: 6px;
+        }
+
+        form {
+            background: white;
+            padding: 16px;
+            border-radius: 8px;
+            max-width: 500px;
+            border: 1px solid #ddd;
+        }
+
+        label {
+            display: block;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="center">
+        <h1>Hello!</h1>
+
+        <a href="https://www.linkedin.com/">
+            <img src="https://i.redd.it/8e2hvmmsbjtf1.jpeg" class="profile-img">
+        </a>
+
+        <p style="font-size:18px;">I'm Prathamesh More.</p>
+    </div>
+
+    <hr>
+
+    <h2>About Me</h2>
+    <p>I'm a B.Tech CSE Student...</p>
+
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn">
+        Go to My Portfolio
+    </a>
+
+    <hr>
+
+    <h2>My Skills</h2>
+    <ul>
+        <li>Sleep</li>
+        <li>Eat</li>
+        <li>Code</li>
+        <li>Drink</li>
+    </ul>
+
+    <a href="https://isu.ac.in/btech-cse/" target="_blank" class="btn btn-green">
+        Explore College
+    </a>
+
+    <hr>
+
+    <h2>My Favorite Cards</h2>
+    <ul>
+        <li>Pekka</li>
+        <li>Mega Knight</li>
+        <li>Archer</li>
+        <li>Bomber</li>
+    </ul>
+
+    <hr>
+
+    <h2>My Favorite Characters</h2>
+    <ol>
+        <li>Bombardiro Crocodilo</li>
+        <li>Chimpanzini Bananini</li>
+        <li>Ballerina Cappuccina</li>
+        <li>Tung Tung Tung Sahur</li>
+    </ol>
+
+    <hr>
+
+    <h2 class="center">Mega Knight</h2>
+    <div class="center">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DVYF5PNF5idI&psig=AOvVaw06pzHuO5766AU5YPpp8JWY&ust=1769160357510000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCLCG6IfqnpIDFQAAAAAdAAAAABAE"
+            height="200" width="200" style="border-radius:10px;">
+    </div>
+
+    <hr>
+
+    <h2>Genz</h2>
+    <table>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>Sixxx Sevennn</td>
+            <td>Sixtyyyy Eightyyy</td>
+            <td>Sixtyyyy Nineee</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Play Music</h2>
+
+    <audio id="audio">
+        <source src="sound.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="audioBtn" class="btn" onclick="toggleAudio()">Play Music</button>
+
+    <script>
+        function toggleAudio() {
+            var audio = document.getElementById("audio");
+            var btn = document.getElementById("audioBtn");
+
+            if (audio.paused) {
+                audio.play();
+                btn.innerHTML = "Pause Music";
+            } else {
+                audio.pause();
+                btn.innerHTML = "Play Music";
+            }
+        }
+    </script>
+
+    <hr>
+
+    <h2>Play Video</h2>
+
+    <video id="video" width="320">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <br>
+
+    <button id="videoBtn" class="btn" onclick="toggleVideo()">Play Video</button>
+
+    <script>
+        function toggleVideo() {
+            var video = document.getElementById("video");
+            var btn = document.getElementById("videoBtn");
+
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause Video";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play Video";
+            }
+        }
+    </script>
+
+    <hr>
+
+    <h2>Student Form</h2>
+
+    <form>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Phone:</label>
+        <input type="tel" placeholder="Enter your phone number" required>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+        <br><br>
+
+        <label>Subjects:</label><br>
+        <input type="checkbox"> Math
+        <input type="checkbox"> Science
+        <input type="checkbox"> Computer
+        <input type="checkbox"> English
+        <br><br>
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <hr>
+
+    <footer>
+        © All rights reserved
+    </footer>
+
+</body>
+
+</html>
