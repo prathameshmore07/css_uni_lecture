@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Element selector */
+        p {
+            color: red;
+        }
+
+        /* ID selector */
+        #id {
+            color: blue;
+        }
+
+        /* !important overrides everything */
+        .force {
+            color: green !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>This is RED (element selector)</p>
+
+    <p id="id">
+        This is BLUE (ID selector overrides element)
+    </p>
+
+    <p id="id" class="force">
+        This is GREEN (!important overrides ID)
+    </p>
+
+</body>
+
+</html>
