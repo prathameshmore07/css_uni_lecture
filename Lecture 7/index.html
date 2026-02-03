@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WaveRiders Surf Academy</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        section {
+            background: linear-gradient(to bottom, #ffffff, #4d8fe6);
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: linear-gradient(to right, #0a2a66, #1f4fa3);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 40px;
+            align-items: center;
+        }
+
+        .navbar nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 500px;
+            background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        .hero-content button {
+            padding: 10px 25px;
+            background: #00a8cc;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* ABOUT SECTION */
+        .about {
+            padding: 60px;
+            text-align: center;
+            background: #f5f9fc;
+        }
+
+        .about h2 {
+            font-size: 28px;
+            color: #1f4fa3;
+            margin-bottom: 15px;
+        }
+
+        /* COURSES SECTION */
+        .courses {
+            padding: 60px;
+            text-align: center;
+            background: #eaf3fb;
+        }
+
+        .courses h2 {
+            color: #1f4fa3;
+            margin-bottom: 30px;
+        }
+
+        .course-cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 260px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            padding: 15px;
+            color: #1f4fa3;
+        }
+
+        /* BOTTOM IMAGE */
+        .wave-image {
+            height: 300px;
+            background: url("https://images.unsplash.com/photo-1502680390469-be75c86b636f") center/cover no-repeat;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0a2a66;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">WaveRiders</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Ride the Waves</h1>
+            <p>Learn surfing with certified instructors</p>
+            <button>Join Now</button>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>
+            WaveRiders Surf Academy helps beginners and pros master the ocean.
+            Safety, fun, and skill — all in one wave!
+        </p>
+    </section>
+
+    <!-- COURSES -->
+    <section class="courses">
+        <h2>Our Courses</h2>
+
+        <div class="course-cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+                <h3>Beginner Surfing</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f">
+                <h3>Intermediate Training</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1501973801540-537f08ccae7b">
+                <h3>Pro Wave Mastery</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMAGE -->
+    <section class="wave-image"></section>
+
+    <!-- FOOTER -->
+    <footer>
+        ©️ 2026 WaveRiders Surf Academy
+    </footer>
+
+</body>
+
+</html>
